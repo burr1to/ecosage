@@ -1,0 +1,18 @@
+.base_markdown {
+  font-size: 16px;
+  line-height: 3;
+}
+
+.base_markdown p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+
+.base_markdown ul {
+  line-height: 2;
+}
+
+.base_markdown li strong {
+  font-weight: bold;
+}

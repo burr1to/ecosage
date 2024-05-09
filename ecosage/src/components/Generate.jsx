@@ -1,10 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 import { useMutation } from "@tanstack/react-query";
+import Markdown from "react-markdown";
 
 const makeRequestAPI = async (prompt) => {
-  const res = await axios.post("http://localhost:8080/generate", {
-    prompt: `${prompt}`,
+  const res = await axios.post("http://localhost:8000/generate", {
+    prompt: `Waste Management Options on ${prompt}`,
   });
   return res.data;
 };
@@ -20,15 +21,11 @@ function Generate() {
     e.preventDefault();
     mutation.mutate(prompt);
   };
-  console.log(mutation);
+
   return (
     <div className='App'>
-      <header className='App-header'>
-        <h1>Ecosage</h1>
-      </header>
-      <p>Enter a prompt </p>
+      <p>Enter a prompt:</p>
       <form className='App-form' onSubmit={submitHandler}>
-        <label htmlFor=''> Enter Your prompt </label>
         <input
           type='text'
           value={prompt}
@@ -37,12 +34,11 @@ function Generate() {
           className='App-input'
         />
         <button className='App-button' type='submit'>
-          Generate content
+          Generate
         </button>
         <section className='App-response'>
-          {mutation.isPending && <p>Generating your content</p>}
           {mutation.isError && <p>{mutation.error.message}</p>}
-          {mutation.isSuccess && <p>{mutation.data}</p>}
+          {mutation.isSuccess && <Markdown>{mutation.data}</Markdown>}
         </section>
       </form>
     </div>
