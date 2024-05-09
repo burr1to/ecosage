@@ -1,12 +1,24 @@
 /* eslint-disable no-unused-vars */
+import axios from "axios";
 import Checkbox from "../../components/Checkbox";
 import { useState } from "react";
 
 export default function Degrade() {
+  const [data, setData] = useState("");
   const [checkedValues, setCheckedValues] = useState([]);
 
   const handleCheckboxChange = (event) => {
     const { checked, value } = event.target;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await axios.post(
+      "http://localhost:8000/generate",
+      "What type of bio-degradable waste comes from your house?"
+    );
+    setData(res.data);
+    console.log("done");
   };
   return (
     <div>
@@ -19,9 +31,10 @@ export default function Degrade() {
         <Checkbox name='Pet Waste' />
         <Checkbox name='Yard Waste' />
         <div>
-          <button onClick={() => {}}>Submit</button>
+          <button onClick={handleSubmit}>Submit</button>
         </div>
       </div>
     </div>
   );
 }
+``;
