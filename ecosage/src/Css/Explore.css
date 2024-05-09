@@ -1,0 +1,73 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card {
+    display: inline-block;
+    height: 380px;
+    width: 420px;
+    border-radius: 80px;
+    color: white;
+    /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}   
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent background for better readability */
+    border-bottom-left-radius: 10px;
+    font-size: larger;
+    border-bottom-right-radius: 10px;
+}
+
+.card-content h2 {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card-content p {
+    margin: 10px 0 0;
+    color: white;
+}
+
+.button--donation button {
+    position: absolute;
+    font-size: 1.5rem;
+    border-radius: 100px;
+    top: 680px;
+    left: 700px;
+    z-index: 101;
+    opacity: 0.7;
+    padding: 15px 20px;
+    border: none;
+    background-color: #ABABAC;
+    color: black;
+
+
+}
+
+.button--donation button:hover {
+    cursor: pointer;
+    background-color: #6C8521;
+    transition: 0.5s ease;
+    color: white;
+}
