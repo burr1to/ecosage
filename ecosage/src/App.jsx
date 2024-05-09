@@ -1,13 +1,8 @@
 import "./App.css";
+import Routedpath from "./Routes";
 
 function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>Ecosage</h1>
-      </header>
-    </div>
-  );
+  return <Routedpath></Routedpath>;
 }
 
 export default App;

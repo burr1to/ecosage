@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@google/generative-ai@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@google/generative-ai/-/generative-ai-0.11.0.tgz#6aeb4161e0ad1173ae187bf708e4af3dc8279152"
+  integrity sha512-nyvrIltnq4RRkUj4FBeDPebWHB1oeALK75aa0xdatEriH05lzBJD6t91afRm5ldtQ5Txu6UwPLuHu5jM1CjtQg==
+
 "@mongodb-js/saslprep@^1.1.5":
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/@mongodb-js/saslprep/-/saslprep-1.1.6.tgz#54da3f794c71a17445740fe2b74882e0c76a3058"
@@ -206,6 +211,11 @@ destroy@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
+
+dotenv@^16.4.5:
+  version "16.4.5"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
+  integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
 
 ee-first@1.1.1:
   version "1.1.1"
