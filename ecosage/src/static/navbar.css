@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-links li {
+  padding: 5px 30px;
+  color: #315304;
+  margin: 0px 10px;
+  font-size: 25px;
+  display: flex;
+  transition: 0.4s;
+}
+
+.navbar-links li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar-logo {
+  text-decoration: none;
+}

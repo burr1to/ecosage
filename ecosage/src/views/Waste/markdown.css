@@ -3,10 +3,15 @@
   line-height: 3;
 }
 
+.base_markdown h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
 .base_markdown p {
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .base_markdown ul {

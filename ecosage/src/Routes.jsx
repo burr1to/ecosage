@@ -5,13 +5,17 @@ import Explore from "./views/Explore/Explore";
 import WasteMan from "./views/Waste/WasteMan";
 import Degrade from "./views/Waste/Degrade";
 import DIY from "./views/DIY/DIY";
+import FundRaise from "./views/Fund/FundRaise";
+
 export default function Routedpath() {
   return (
     <Routes>
       <Route path='/'>
         <Route index element={<Home />} />
+
         <Route path='explore'>
           <Route index element={<Explore />} />
+          <Route path='donate' element={<FundRaise />} />
           <Route path='waste'>
             <Route index element={<WasteMan />} />
             <Route path='bio' element={<Degrade />} />
